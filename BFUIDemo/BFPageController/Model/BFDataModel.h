@@ -1,0 +1,15 @@
+//
+//  BFDataModel.h
+//  BFUIDemo
+//
+//  Created by 刘玲 on 2018/9/20.
+//  Copyright © 2018年 BFAlex. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface BFDataModel : NSObject
+
++ (instancetype)model;
+
+@end
