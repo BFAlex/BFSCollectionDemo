@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5FCF8A532599D2A0004FDDC6 /* BFSCollectionDemo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF8A522599D2A0004FDDC6 /* BFSCollectionDemo.jpeg */; };
+		5FCF8A622599D7DB004FDDC6 /* pic1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF8A612599D7DB004FDDC6 /* pic1.jpeg */; };
 		C4A51F0E2151E6C0003AA63F /* BFPageMenuBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A51F0D2151E6C0003AA63F /* BFPageMenuBarView.m */; };
 		C4A51F152151EDE8003AA63F /* UIView+BFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A51F142151EDE8003AA63F /* UIView+BFExtension.m */; };
 		C4C2D33E2153935E00B55982 /* BFCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C2D33D2153935E00B55982 /* BFCollectionController.m */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		5FCF8A522599D2A0004FDDC6 /* BFSCollectionDemo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BFSCollectionDemo.jpeg; sourceTree = "<group>"; };
+		5FCF8A612599D7DB004FDDC6 /* pic1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpeg; sourceTree = "<group>"; };
 		C4A51F0C2151E6C0003AA63F /* BFPageMenuBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFPageMenuBarView.h; sourceTree = "<group>"; };
 		C4A51F0D2151E6C0003AA63F /* BFPageMenuBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFPageMenuBarView.m; sourceTree = "<group>"; };
 		C4A51F132151EDE8003AA63F /* UIView+BFExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+BFExtension.h"; sourceTree = "<group>"; };
@@ -62,12 +64,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5FCF8A512599D294004FDDC6 /* Resource */ = {
+		5FCF8A512599D294004FDDC6 /* ShowResource */ = {
 			isa = PBXGroup;
 			children = (
+				5FCF8A612599D7DB004FDDC6 /* pic1.jpeg */,
 				5FCF8A522599D2A0004FDDC6 /* BFSCollectionDemo.jpeg */,
 			);
-			path = Resource;
+			path = ShowResource;
 			sourceTree = "<group>";
 		};
 		C4A51F0B2151E65D003AA63F /* View */ = {
@@ -118,7 +121,7 @@
 		C4DA68022150FABD00509531 /* BFUIDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5FCF8A512599D294004FDDC6 /* Resource */,
+				5FCF8A512599D294004FDDC6 /* ShowResource */,
 				C4DA68192150FAEB00509531 /* BFPageController */,
 				C4DA68032150FABD00509531 /* AppDelegate.h */,
 				C4DA68042150FABD00509531 /* AppDelegate.m */,
@@ -209,6 +212,7 @@
 				C4DA68102150FAC800509531 /* LaunchScreen.storyboard in Resources */,
 				C4DA680D2150FAC800509531 /* Assets.xcassets in Resources */,
 				5FCF8A532599D2A0004FDDC6 /* BFSCollectionDemo.jpeg in Resources */,
+				5FCF8A622599D7DB004FDDC6 /* pic1.jpeg in Resources */,
 				C4DA680B2150FABD00509531 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

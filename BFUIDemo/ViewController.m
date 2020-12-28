@@ -26,8 +26,8 @@
     
 //    [self testMenuBarView];
 //    [self testPageControllers];
-//    [self testTwo];
-    [self testCollectionC];
+    [self testTwo];
+//    [self testCollectionC];
 }
 
 - (void)testCollectionC {
