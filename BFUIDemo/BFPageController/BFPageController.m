@@ -151,11 +151,17 @@ static NSString * const reuseIdentifier = @"BFPageControllerCell";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
-//    cell.backgroundColor = [UIColor blueColor];
+//    if (indexPath.row % 2) {
+//        cell.backgroundColor = [UIColor blueColor];
+//    } else {
+//        cell.backgroundColor = [UIColor yellowColor];
+//    }
+    UIViewController *targetVC = self.pageControllers[indexPath.row];
+    [cell addSubview:targetVC.view];
     if (indexPath.row % 2) {
-        cell.backgroundColor = [UIColor blueColor];
+        targetVC.view.backgroundColor = [UIColor blueColor];
     } else {
-        cell.backgroundColor = [UIColor yellowColor];
+        targetVC.view.backgroundColor = [UIColor yellowColor];
     }
     
     return cell;

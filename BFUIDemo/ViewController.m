@@ -61,6 +61,20 @@
         item.pageTitle = [NSString stringWithFormat:@"%d", i];
         item.pageController = [[UIViewController alloc] init];
         [items addObject:item];
+        //
+//        UILabel *tmpLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 60)];
+//        tmpLabel.text = [NSString stringWithFormat:@"vc:%d", i];
+//        [item.pageController.view addSubview:tmpLabel];
+//        tmpLabel.center = item.pageController.view.center;
+//        tmpLabel.backgroundColor = [UIColor orangeColor];
+//        tmpLabel.textColor = [UIColor blackColor];
+//        
+//        UIButton *tmpBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//        tmpBtn.frame = CGRectMake(100, 100, 60, 60);
+//        [item.pageController.view addSubview:tmpBtn];
+//        tmpBtn.backgroundColor = [UIColor orangeColor];
+//        [tmpBtn addTarget:self action:@selector(actionBtn:) forControlEvents:UIControlEventTouchUpInside];
+//        tmpBtn.tag = i;
     }
     BFPageController *pageController = [[BFPageController alloc] initWithPageControllerItems:items viewBounds:contentView.bounds andScrollDirection:UICollectionViewScrollDirectionHorizontal];
     [self addChildViewController:pageController];
@@ -69,6 +83,10 @@
     pageController.pageScrollBlock = ^(CGFloat scrollX, CGFloat scrollY) {
         [self.menuBar scrollToX:scrollX andY:scrollY];
     };
+}
+
+- (void)actionBtn:(UIButton *)btn {
+    NSLog(@"%s%d >>> tag:%d", __func__, __LINE__, btn.tag);
 }
 
 - (void)testPageControllers {
