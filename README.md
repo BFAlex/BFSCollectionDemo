@@ -1,5 +1,5 @@
 # BFSCollectionDemo
-Collection Page With TitleBar【效果图】
+【效果图】Collection Page With TitleBar
 
 Type 1
 
